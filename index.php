@@ -43,24 +43,16 @@ if ($SERVER["REQUEST METHOD"] == "POST"){
 
         </p>
 
-        <script>
-            const cadastro = document.getElementById("cadastro");
-            const registro = document.getElementById("registro");
-            
+        <?php if ($_SERVER["REQUEST_METHOD"] == "POST"): ?>
 
-            cadastro.addEventListener("submit", function(event){
-                event.preventDefault()
+            <h2> </h2>
+            <p>Dados recebidos pelo servidor </p>
+            <p><strong>Nome::<strong> <?php echo htmlspecialchars($nome); ?></p>
+            <p><strong>Email::<strong> <?php echo htmlspecialchars($email);?></p>
+            <p><strong>Telefone::<strong> <?php echo htmlspecialchars($telefone);?></p>
 
-                const nome = document.getElementById("nome").value;
-                const telefone = document.getElementById("telefone").value;
-                const email = document.getElementById("email").value;
-
-                console.log(email);
-
-                registro.innerHTML = `<br>Registros: <br> nome: ${nome}<br> telefone: ${telefone}<br> email: ${email}`;
-            }); 
-
-        </script>
+        <?php endif; ?>
+    
 
     </body>
 </html>
