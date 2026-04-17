@@ -4,7 +4,7 @@ $nome = "";
 $email = "";
 $telefone = "";
 
-if ($SERVER["REQUEST METHOD"] == "POST"){
+if ($_SERVER["REQUEST METHOD"] == "POST"){
     $nome = $_POST["nome"] ?? "";
     $email = $_POST["email"] ?? "";
     $telefone = $_POST["nome"] ?? "";
