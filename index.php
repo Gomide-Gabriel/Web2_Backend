@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         <h1>Cadastro do Usuário</h1>
         <h3>Preencha os dados abaixo:</h3>
 
-        <form id="cadastro">
+    <form id="cadastro" method="POST">
             <label for="nome">Nome:</label><br>
             <input type="text" id="nome" name="nome" required><br>
 
