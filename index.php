@@ -158,13 +158,13 @@ $resultLista = pg_query($conn, $queryLista);
 
     <form method="POST" action="">
       <label for="nome">Nome:</label><br>
-      <input type="text" id="nome" name="nome" required value="<?php echo htmlspecialchars($nome); ?>">
+      <input type="text" id="nome" name="nome" required value="<?php echo htmlspecialchars($nome); ?>"><br>
 
       <label for="email">E-mail:</label><br>
-      <input type="email" id="email" name="email" required value="<?php echo htmlspecialchars($email); ?>">
+      <input type="email" id="email" name="email" required value="<?php echo htmlspecialchars($email); ?>"> <br>
 
       <label for="telefone">Telefone:</label><br>
-      <input type="text" id="telefone" name="telefone" required value="<?php echo htmlspecialchars($telefone); ?>">
+      <input type="text" id="telefone" name="telefone" required value="<?php echo htmlspecialchars($telefone); ?>"><br>
 
       <button type="submit">Cadastrar</button>
     </form>
